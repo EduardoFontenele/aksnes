@@ -1,0 +1,277 @@
+2024-12-23 04:11:30 [main] INFO  b.c.gateway.aksnes.AksnesApplication - Starting AksnesApplication using Java 21.0.5 with PID 269504 (/home/edufonten/Workspace/aksnes/target/classes started by edufonten in /home/edufonten/Workspace/aksnes)
+2024-12-23 04:11:30 [main] INFO  b.c.gateway.aksnes.AksnesApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 04:11:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-23 04:11:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2024-12-23 04:11:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-23 04:11:31 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-23 04:11:31 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-23 04:11:31 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-23 04:11:31 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1092 ms
+2024-12-23 04:11:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-23 04:11:31 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6266c2a3-7bd5-4e49-b4c2-63646dbb99bb user=SA
+2024-12-23 04:11:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-23 04:11:32 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-23 04:11:32 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-23 04:11:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-23 04:11:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-23 04:11:32 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.230
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-23 04:11:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-23 04:11:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:11:32 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-23 04:11:32 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 702e9a35-30ad-49d7-92f4-6fad5f871719
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-12-23 04:11:32 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-23 04:11:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-23 04:11:33 [main] INFO  b.c.gateway.aksnes.AksnesApplication - Started AksnesApplication in 2.831 seconds (process running for 3.064)
+2024-12-23 04:11:56 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-23 04:11:56 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-23 04:11:56 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:11:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-23 04:11:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-23 04:12:01 [main] INFO  b.c.gateway.aksnes.AksnesApplication - Starting AksnesApplication using Java 21.0.5 with PID 270496 (/home/edufonten/Workspace/aksnes/target/classes started by edufonten in /home/edufonten/Workspace/aksnes)
+2024-12-23 04:12:01 [main] INFO  b.c.gateway.aksnes.AksnesApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 04:12:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-23 04:12:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2024-12-23 04:12:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-23 04:12:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-23 04:12:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-23 04:12:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-23 04:12:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 842 ms
+2024-12-23 04:12:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-23 04:12:02 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b4dff56d-5db6-460e-91b7-64ed57122489 user=SA
+2024-12-23 04:12:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-23 04:12:02 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-23 04:12:02 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-23 04:12:02 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-23 04:12:02 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-23 04:12:02 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.230
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-23 04:12:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-23 04:12:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:12:03 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-23 04:12:03 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7b7f9502-6472-4b28-b0e0-587c2f36b2c4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-12-23 04:12:03 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-23 04:12:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-23 04:12:03 [main] INFO  b.c.gateway.aksnes.AksnesApplication - Started AksnesApplication in 2.417 seconds (process running for 2.638)
+2024-12-23 04:12:07 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-23 04:12:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-23 04:12:07 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-12-23 04:12:29 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-23 04:12:29 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-23 04:12:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:12:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-23 04:12:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-23 04:12:33 [main] INFO  b.c.gateway.aksnes.AksnesApplication - Starting AksnesApplication using Java 21.0.5 with PID 271315 (/home/edufonten/Workspace/aksnes/target/classes started by edufonten in /home/edufonten/Workspace/aksnes)
+2024-12-23 04:12:33 [main] INFO  b.c.gateway.aksnes.AksnesApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 04:12:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-23 04:12:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2024-12-23 04:12:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-23 04:12:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-23 04:12:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-23 04:12:34 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-23 04:12:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 827 ms
+2024-12-23 04:12:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-23 04:12:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:9a9ed1ba-1db1-4c9e-ad90-f1166ece0c75 user=SA
+2024-12-23 04:12:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-23 04:12:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-23 04:12:34 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-23 04:12:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-23 04:12:34 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-23 04:12:34 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.230
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-23 04:12:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-23 04:12:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:12:35 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-23 04:12:35 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c39156bf-349e-447a-bbaf-b64f8709703b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-12-23 04:12:35 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-23 04:12:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-23 04:12:35 [main] INFO  b.c.gateway.aksnes.AksnesApplication - Started AksnesApplication in 2.403 seconds (process running for 2.624)
+2024-12-23 04:12:38 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-23 04:12:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-23 04:12:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-23 04:12:50 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-23 04:12:50 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-23 04:12:50 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:12:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-23 04:12:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-23 04:22:10.164 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - Starting AksnesApplication using Java 21.0.5 with PID 283784 (/home/edufonten/Workspace/aksnes/target/classes started by edufonten in /home/edufonten/Workspace/aksnes)
+2024-12-23 04:22:10.166 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 04:22:10.639 [main] [o.s.d.r.c.RepositoryConfigurationDelegate] INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-23 04:22:10.655 [main] [o.s.d.r.c.RepositoryConfigurationDelegate] INFO  - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2024-12-23 04:22:11.034 [main] [o.s.b.w.e.tomcat.TomcatWebServer] INFO  - Tomcat initialized with port 8080 (http)
+2024-12-23 04:22:11.044 [main] [o.a.catalina.core.StandardService] INFO  - Starting service [Tomcat]
+2024-12-23 04:22:11.044 [main] [o.a.catalina.core.StandardEngine] INFO  - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-23 04:22:11.077 [main] [o.a.c.c.C.[Tomcat].[localhost].[/]] INFO  - Initializing Spring embedded WebApplicationContext
+2024-12-23 04:22:11.077 [main] [o.s.b.w.s.c.ServletWebServerApplicationContext] INFO  - Root WebApplicationContext: initialization completed in 870 ms
+2024-12-23 04:22:11.163 [main] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Starting...
+2024-12-23 04:22:11.283 [main] [com.zaxxer.hikari.pool.HikariPool] INFO  - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a6dfe71a-b789-4b09-b70e-f654352ebcfd user=SA
+2024-12-23 04:22:11.285 [main] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Start completed.
+2024-12-23 04:22:11.327 [main] [o.h.jpa.internal.util.LogHelper] INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-23 04:22:11.363 [main] [org.hibernate.Version] INFO  - HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-23 04:22:11.384 [main] [o.h.c.i.RegionFactoryInitiator] INFO  - HHH000026: Second-level cache disabled
+2024-12-23 04:22:11.546 [main] [o.s.o.j.p.SpringPersistenceUnitInfo] INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-23 04:22:11.594 [main] [o.hibernate.orm.connections.pooling] INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.230
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-23 04:22:11.800 [main] [o.h.e.t.j.p.i.JtaPlatformInitiator] INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-23 04:22:11.803 [main] [o.s.o.j.LocalContainerEntityManagerFactoryBean] INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:22:11.854 [main] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-23 04:22:11.879 [main] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] WARN  - 
+
+Using generated security password: b4c93f9a-115f-4530-b605-a2774e02e25b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-12-23 04:22:11.894 [main] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] INFO  - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-23 04:22:12.298 [main] [o.s.b.w.e.tomcat.TomcatWebServer] INFO  - Tomcat started on port 8080 (http) with context path '/'
+2024-12-23 04:22:12.304 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - Started AksnesApplication in 2.483 seconds (process running for 2.709)
+2024-12-23 04:22:15.497 [http-nio-8080-exec-2] [o.a.c.c.C.[Tomcat].[localhost].[/]] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-23 04:22:15.497 [http-nio-8080-exec-2] [o.s.web.servlet.DispatcherServlet] INFO  - Initializing Servlet 'dispatcherServlet'
+2024-12-23 04:22:15.498 [http-nio-8080-exec-2] [o.s.web.servlet.DispatcherServlet] INFO  - Completed initialization in 1 ms
+2024-12-23 04:22:15.519 [http-nio-8080-exec-2] [b.c.g.a.s.filter.JwtSecurityFilter] ERROR - JWT not present
+2024-12-23 04:23:06.444 [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] INFO  - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-23 04:23:06.448 [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] INFO  - Graceful shutdown complete
+2024-12-23 04:23:06.452 [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:23:06.454 [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Shutdown initiated...
+2024-12-23 04:23:06.459 [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Shutdown completed.
+2024-12-23 04:23:09.444 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - Starting AksnesApplication using Java 21.0.5 with PID 285147 (/home/edufonten/Workspace/aksnes/target/classes started by edufonten in /home/edufonten/Workspace/aksnes)
+2024-12-23 04:23:09.446 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 04:23:09.886 [main] [o.s.d.r.c.RepositoryConfigurationDelegate] INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-23 04:23:09.902 [main] [o.s.d.r.c.RepositoryConfigurationDelegate] INFO  - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2024-12-23 04:23:10.282 [main] [o.s.b.w.e.tomcat.TomcatWebServer] INFO  - Tomcat initialized with port 8080 (http)
+2024-12-23 04:23:10.291 [main] [o.a.catalina.core.StandardService] INFO  - Starting service [Tomcat]
+2024-12-23 04:23:10.292 [main] [o.a.catalina.core.StandardEngine] INFO  - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2024-12-23 04:23:10.325 [main] [o.a.c.c.C.[Tomcat].[localhost].[/]] INFO  - Initializing Spring embedded WebApplicationContext
+2024-12-23 04:23:10.325 [main] [o.s.b.w.s.c.ServletWebServerApplicationContext] INFO  - Root WebApplicationContext: initialization completed in 843 ms
+2024-12-23 04:23:10.408 [main] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Starting...
+2024-12-23 04:23:10.527 [main] [com.zaxxer.hikari.pool.HikariPool] INFO  - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:682bdab9-86be-4ff5-8643-d841ec7279d0 user=SA
+2024-12-23 04:23:10.528 [main] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Start completed.
+2024-12-23 04:23:10.571 [main] [o.h.jpa.internal.util.LogHelper] INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-23 04:23:10.608 [main] [org.hibernate.Version] INFO  - HHH000412: Hibernate ORM core version 6.6.4.Final
+2024-12-23 04:23:10.629 [main] [o.h.c.i.RegionFactoryInitiator] INFO  - HHH000026: Second-level cache disabled
+2024-12-23 04:23:10.790 [main] [o.s.o.j.p.SpringPersistenceUnitInfo] INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-23 04:23:10.838 [main] [o.hibernate.orm.connections.pooling] INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.230
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-23 04:23:11.052 [main] [o.h.e.t.j.p.i.JtaPlatformInitiator] INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-23 04:23:11.056 [main] [o.s.o.j.LocalContainerEntityManagerFactoryBean] INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:23:11.112 [main] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-23 04:23:11.141 [main] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] WARN  - 
+
+Using generated security password: 085c3545-3bf2-4519-9e8d-7035f0dae853
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-12-23 04:23:11.158 [main] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] INFO  - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-12-23 04:23:11.579 [main] [o.s.b.w.e.tomcat.TomcatWebServer] INFO  - Tomcat started on port 8080 (http) with context path '/'
+2024-12-23 04:23:11.584 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - Started AksnesApplication in 2.474 seconds (process running for 2.709)
+2024-12-23 04:23:16.459 [http-nio-8080-exec-1] [o.a.c.c.C.[Tomcat].[localhost].[/]] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-23 04:23:16.459 [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] INFO  - Initializing Servlet 'dispatcherServlet'
+2024-12-23 04:23:16.460 [http-nio-8080-exec-1] [o.s.web.servlet.DispatcherServlet] INFO  - Completed initialization in 1 ms
+2024-12-23 04:23:16.479 [http-nio-8080-exec-1] [b.c.g.a.s.filter.JwtSecurityFilter] ERROR - JWT not present
+2024-12-23 04:24:17.883 [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] INFO  - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-23 04:24:17.887 [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] INFO  - Graceful shutdown complete
+2024-12-23 04:24:17.891 [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-23 04:24:17.893 [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Shutdown initiated...
+2024-12-23 04:24:17.895 [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Shutdown completed.
+2024-12-23 04:24:21.371 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - Starting AksnesApplication using Java 21.0.5 with PID 286705 (/home/edufonten/Workspace/aksnes/target/classes started by edufonten in /home/edufonten/Workspace/aksnes)
+b.c.gateway.aksnes.AksnesApplication:532024-12-23 04:24:21.373 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - No active profile set, falling back to 1 default profile: "default"
+b.c.gateway.aksnes.AksnesApplication:6522024-12-23 04:24:21.808 [main] [o.s.d.r.c.RepositoryConfigurationDelegate] INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+o.s.d.r.c.RepositoryConfigurationDelegate:1432024-12-23 04:24:21.824 [main] [o.s.d.r.c.RepositoryConfigurationDelegate] INFO  - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+o.s.d.r.c.RepositoryConfigurationDelegate:2112024-12-23 04:24:22.199 [main] [o.s.b.w.e.tomcat.TomcatWebServer] INFO  - Tomcat initialized with port 8080 (http)
+o.s.b.w.e.tomcat.TomcatWebServer:1112024-12-23 04:24:22.209 [main] [o.a.catalina.core.StandardService] INFO  - Starting service [Tomcat]
+o.a.catalina.core.StandardService:1732024-12-23 04:24:22.210 [main] [o.a.catalina.core.StandardEngine] INFO  - Starting Servlet engine: [Apache Tomcat/10.1.34]
+o.a.catalina.core.StandardEngine:1732024-12-23 04:24:22.242 [main] [o.a.c.c.C.[Tomcat].[localhost].[/]] INFO  - Initializing Spring embedded WebApplicationContext
+o.a.c.c.C.[Tomcat].[localhost].[/]:1732024-12-23 04:24:22.242 [main] [o.s.b.w.s.c.ServletWebServerApplicationContext] INFO  - Root WebApplicationContext: initialization completed in 834 ms
+o.s.b.w.s.c.ServletWebServerApplicationContext:2962024-12-23 04:24:22.328 [main] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Starting...
+com.zaxxer.hikari.HikariDataSource:1092024-12-23 04:24:22.444 [main] [com.zaxxer.hikari.pool.HikariPool] INFO  - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:696dfef4-b5b2-4ee0-84f4-b99396fb1195 user=SA
+com.zaxxer.hikari.pool.HikariPool:5542024-12-23 04:24:22.445 [main] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Start completed.
+com.zaxxer.hikari.HikariDataSource:1222024-12-23 04:24:22.487 [main] [o.h.jpa.internal.util.LogHelper] INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+o.h.jpa.internal.util.LogHelper:312024-12-23 04:24:22.524 [main] [org.hibernate.Version] INFO  - HHH000412: Hibernate ORM core version 6.6.4.Final
+org.hibernate.Version:442024-12-23 04:24:22.544 [main] [o.h.c.i.RegionFactoryInitiator] INFO  - HHH000026: Second-level cache disabled
+o.h.c.i.RegionFactoryInitiator:502024-12-23 04:24:22.722 [main] [o.s.o.j.p.SpringPersistenceUnitInfo] INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer
+o.s.o.j.p.SpringPersistenceUnitInfo:872024-12-23 04:24:22.786 [main] [o.hibernate.orm.connections.pooling] INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.230
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+o.hibernate.orm.connections.pooling:1572024-12-23 04:24:23.006 [main] [o.h.e.t.j.p.i.JtaPlatformInitiator] INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+o.h.e.t.j.p.i.JtaPlatformInitiator:592024-12-23 04:24:23.012 [main] [o.s.o.j.LocalContainerEntityManagerFactoryBean] INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+o.s.o.j.LocalContainerEntityManagerFactoryBean:4472024-12-23 04:24:23.067 [main] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:2412024-12-23 04:24:23.100 [main] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] WARN  - 
+
+Using generated security password: d4b46f2b-5b27-45d8-b88e-4492370f1dfa
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+o.s.b.a.s.s.UserDetailsServiceAutoConfiguration:902024-12-23 04:24:23.116 [main] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] INFO  - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:1142024-12-23 04:24:23.541 [main] [o.s.b.w.e.tomcat.TomcatWebServer] INFO  - Tomcat started on port 8080 (http) with context path '/'
+o.s.b.w.e.tomcat.TomcatWebServer:2432024-12-23 04:24:23.547 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - Started AksnesApplication in 2.502 seconds (process running for 2.713)
+b.c.gateway.aksnes.AksnesApplication:592024-12-23 04:24:31.052 [http-nio-8080-exec-2] [o.a.c.c.C.[Tomcat].[localhost].[/]] INFO  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+o.a.c.c.C.[Tomcat].[localhost].[/]:1732024-12-23 04:24:31.052 [http-nio-8080-exec-2] [o.s.web.servlet.DispatcherServlet] INFO  - Initializing Servlet 'dispatcherServlet'
+o.s.web.servlet.DispatcherServlet:5322024-12-23 04:24:31.053 [http-nio-8080-exec-2] [o.s.web.servlet.DispatcherServlet] INFO  - Completed initialization in 1 ms
+o.s.web.servlet.DispatcherServlet:5542024-12-23 04:24:31.074 [http-nio-8080-exec-2] [b.c.g.a.s.filter.JwtSecurityFilter] ERROR - JWT not present
+b.c.g.a.s.filter.JwtSecurityFilter:282024-12-23 04:25:41.738 [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] INFO  - Commencing graceful shutdown. Waiting for active requests to complete
+o.s.b.w.e.tomcat.GracefulShutdown:542024-12-23 04:25:41.743 [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] INFO  - Graceful shutdown complete
+o.s.b.w.e.tomcat.GracefulShutdown:762024-12-23 04:25:41.746 [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+o.s.o.j.LocalContainerEntityManagerFactoryBean:6602024-12-23 04:25:41.749 [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Shutdown initiated...
+com.zaxxer.hikari.HikariDataSource:3492024-12-23 04:25:41.751 [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Shutdown completed.
+com.zaxxer.hikari.HikariDataSource:3512024-12-23 04:25:45.033 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - Starting AksnesApplication using Java 21.0.5 with PID 288640 (/home/edufonten/Workspace/aksnes/target/classes started by edufonten in /home/edufonten/Workspace/aksnes) b.c.gateway.aksnes.AksnesApplication:532024-12-23 04:25:45.035 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - No active profile set, falling back to 1 default profile: "default" b.c.gateway.aksnes.AksnesApplication:6522024-12-23 04:25:45.520 [main] [o.s.d.r.c.RepositoryConfigurationDelegate] INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode. o.s.d.r.c.RepositoryConfigurationDelegate:1432024-12-23 04:25:45.538 [main] [o.s.d.r.c.RepositoryConfigurationDelegate] INFO  - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces. o.s.d.r.c.RepositoryConfigurationDelegate:2112024-12-23 04:25:45.984 [main] [o.s.b.w.e.tomcat.TomcatWebServer] INFO  - Tomcat initialized with port 8080 (http) o.s.b.w.e.tomcat.TomcatWebServer:1112024-12-23 04:25:45.996 [main] [o.a.catalina.core.StandardService] INFO  - Starting service [Tomcat] o.a.catalina.core.StandardService:1732024-12-23 04:25:45.997 [main] [o.a.catalina.core.StandardEngine] INFO  - Starting Servlet engine: [Apache Tomcat/10.1.34] o.a.catalina.core.StandardEngine:1732024-12-23 04:25:46.032 [main] [o.a.c.c.C.[Tomcat].[localhost].[/]] INFO  - Initializing Spring embedded WebApplicationContext o.a.c.c.C.[Tomcat].[localhost].[/]:1732024-12-23 04:25:46.032 [main] [o.s.b.w.s.c.ServletWebServerApplicationContext] INFO  - Root WebApplicationContext: initialization completed in 958 ms o.s.b.w.s.c.ServletWebServerApplicationContext:2962024-12-23 04:25:46.122 [main] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Starting... com.zaxxer.hikari.HikariDataSource:1092024-12-23 04:25:46.242 [main] [com.zaxxer.hikari.pool.HikariPool] INFO  - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:be48ef5b-c696-4979-b9e0-486026cd6368 user=SA com.zaxxer.hikari.pool.HikariPool:5542024-12-23 04:25:46.243 [main] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Start completed. com.zaxxer.hikari.HikariDataSource:1222024-12-23 04:25:46.285 [main] [o.h.jpa.internal.util.LogHelper] INFO  - HHH000204: Processing PersistenceUnitInfo [name: default] o.h.jpa.internal.util.LogHelper:312024-12-23 04:25:46.321 [main] [org.hibernate.Version] INFO  - HHH000412: Hibernate ORM core version 6.6.4.Final org.hibernate.Version:442024-12-23 04:25:46.341 [main] [o.h.c.i.RegionFactoryInitiator] INFO  - HHH000026: Second-level cache disabled o.h.c.i.RegionFactoryInitiator:502024-12-23 04:25:46.505 [main] [o.s.o.j.p.SpringPersistenceUnitInfo] INFO  - No LoadTimeWeaver setup: ignoring JPA class transformer o.s.o.j.p.SpringPersistenceUnitInfo:872024-12-23 04:25:46.553 [main] [o.hibernate.orm.connections.pooling] INFO  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.230
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown o.hibernate.orm.connections.pooling:1572024-12-23 04:25:46.763 [main] [o.h.e.t.j.p.i.JtaPlatformInitiator] INFO  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) o.h.e.t.j.p.i.JtaPlatformInitiator:592024-12-23 04:25:46.766 [main] [o.s.o.j.LocalContainerEntityManagerFactoryBean] INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default' o.s.o.j.LocalContainerEntityManagerFactoryBean:4472024-12-23 04:25:46.824 [main] [o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration] WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:2412024-12-23 04:25:46.862 [main] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration] WARN  - 
+
+Using generated security password: 774d89c7-c0a2-466b-aea5-911b903b6c07
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+ o.s.b.a.s.s.UserDetailsServiceAutoConfiguration:902024-12-23 04:25:46.878 [main] [o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] INFO  - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer:1142024-12-23 04:25:47.367 [main] [o.s.b.w.e.tomcat.TomcatWebServer] INFO  - Tomcat started on port 8080 (http) with context path '/' o.s.b.w.e.tomcat.TomcatWebServer:2432024-12-23 04:25:47.373 [main] [b.c.gateway.aksnes.AksnesApplication] INFO  - Started AksnesApplication in 2.673 seconds (process running for 2.896) b.c.gateway.aksnes.AksnesApplication:592024-12-23 04:27:24.259 [SpringApplicationShutdownHook] [o.s.b.w.e.tomcat.GracefulShutdown] INFO  - Commencing graceful shutdown. Waiting for active requests to complete o.s.b.w.e.tomcat.GracefulShutdown:542024-12-23 04:27:24.274 [tomcat-shutdown] [o.s.b.w.e.tomcat.GracefulShutdown] INFO  - Graceful shutdown complete o.s.b.w.e.tomcat.GracefulShutdown:762024-12-23 04:27:24.281 [SpringApplicationShutdownHook] [o.s.o.j.LocalContainerEntityManagerFactoryBean] INFO  - Closing JPA EntityManagerFactory for persistence unit 'default' o.s.o.j.LocalContainerEntityManagerFactoryBean:6602024-12-23 04:27:24.283 [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Shutdown initiated... com.zaxxer.hikari.HikariDataSource:3492024-12-23 04:27:24.286 [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] INFO  - HikariPool-1 - Shutdown completed. com.zaxxer.hikari.HikariDataSource:351

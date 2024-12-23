@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: aksnes
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ss
+
+kafka:
+  bootstrap-servers: localhost:9092
+
+jwt:
+  secret:
+    key: f44754246414e8f7d0bf2c3a654e7f264de4e677bc5cda0e80cea1f6efef678de088af2dfe31aa5019614517e4cb2e8c56735619096af27a6ef696bdc699660ff4b755f9b9541241adcf3f702d3d391e5e37db00904f0fbe2c0d246f41acb093da4da6b1cf4248e6ed034d782614f761a3e550b90436beec790bcecfe5500b6fcf36d51546a4fdc475543b49c9472264c4aab46a0ecbbeab60f71538902c51ff7883548bb749791824843d5a657e34d647805bfa21ee2fb4821788a7ed1aeb1c2108022d7f2af1f41fac42f792f71e6d4aadf43b1f28fd29f755383097abaeb18508ed3e4859f8d490f40ce1b9be237c105fe79aa12f26d405706e06964d5cd2
+    issuer: 127.0.0.1:8080
+  expiration:
+    minutes: 3
+
+
+
