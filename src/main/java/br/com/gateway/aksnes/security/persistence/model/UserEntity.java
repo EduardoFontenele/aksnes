@@ -18,6 +18,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDate;
 import java.util.Set;
 import java.util.UUID;
 
@@ -31,23 +32,32 @@ import java.util.UUID;
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Integer id;
 
     @Column(name = "user_id", unique = true, nullable = false, columnDefinition = "BINARY(16)")
     private UUID userId;
 
     @Column(unique = true, nullable = false)
-    private String username;
+    private String name;
 
-    @Column(nullable = false)
+    @Column(unique = true, nullable = false)
+    private String surname;
+
+    @Column(columnDefinition = "CHAR(60) NOT NULL")
     private String password;
 
+    @Column(columnDefinition = "VARCHAR(12) NOT NULL")
+    private String cpf;
+
     @Column(nullable = false)
+    private LocalDate birthday;
+
+    @Column(unique = true, nullable = false)
     private String email;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
-            name = "user_roles",
+            name = "users_roles",
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )

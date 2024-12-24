@@ -7,11 +7,10 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
-import java.util.List;
 
 
 @RequiredArgsConstructor
-public final class UserSecurityDto implements UserDetails {
+public final class UserSecurityDTO implements UserDetails {
     private final UserEntity userEntity;
 
     @Override
@@ -29,7 +28,7 @@ public final class UserSecurityDto implements UserDetails {
 
     @Override
     public String getUsername() {
-        return userEntity.getUsername();
+        return userEntity.getEmail();
     }
 
     @Override

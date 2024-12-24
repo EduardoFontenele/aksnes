@@ -28,7 +28,7 @@ public class ApiSecurityConfig {
                 })
                 .cors(Customizer.withDefaults())
                 .csrf(AbstractHttpConfigurer::disable)
-                .addFilterAfter(jwtSecurityFilter, UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(jwtSecurityFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
 }

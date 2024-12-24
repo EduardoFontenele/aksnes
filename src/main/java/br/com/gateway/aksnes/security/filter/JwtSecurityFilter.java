@@ -1,7 +1,7 @@
 package br.com.gateway.aksnes.security.filter;
 
 import br.com.gateway.aksnes.exception.ApiSecurityException;
-import br.com.gateway.aksnes.security.dto.ErrorResponseDto;
+import br.com.gateway.aksnes.security.dto.ErrorResponseDTO;
 import br.com.gateway.aksnes.security.service.JwtService;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -64,7 +64,7 @@ public class JwtSecurityFilter extends OncePerRequestFilter {
             }
         } catch (ApiSecurityException ex) {
             log.error("Error extracting claims from JWT token: {} - Token: {}", ex.getMessage(), charSequence);
-            var responseBodyAsString = marshalPojoToJsonString(new ErrorResponseDto(ex.getHttpStatus(), ex.getMessage()));
+            var responseBodyAsString = marshalPojoToJsonString(new ErrorResponseDTO(ex.getHttpStatus(), ex.getMessage()));
 
             response.setStatus(ex.getHttpStatus().value());
             response.getWriter().write(responseBodyAsString);
@@ -81,7 +81,7 @@ public class JwtSecurityFilter extends OncePerRequestFilter {
         return (authorization == null || authorization.equalsIgnoreCase("null")) || !authorization.startsWith("Bearer ");
     }
 
-    private String marshalPojoToJsonString(ErrorResponseDto dto) {
+    private String marshalPojoToJsonString(ErrorResponseDTO dto) {
         try {
             return objectMapper.writeValueAsString(dto);
         } catch (JsonProcessingException ex) {
