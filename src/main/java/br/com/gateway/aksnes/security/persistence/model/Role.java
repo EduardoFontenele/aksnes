@@ -1,6 +1,6 @@
 package br.com.gateway.aksnes.security.persistence.model;
 
-public enum Roles {
+public enum Role {
     ADMIN,
     CUSTOMER,
     VENDOR

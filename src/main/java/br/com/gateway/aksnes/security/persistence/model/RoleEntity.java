@@ -28,5 +28,5 @@ public class RoleEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false, unique = true)
-    private Roles role;
+    private Role role;
 }

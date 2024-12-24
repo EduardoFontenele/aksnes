@@ -15,7 +15,7 @@ public final class UserSecurityDTO implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return userEntity.getRoles()
+        return userEntity.getUserRoles()
                 .stream()
                 .map(permissionEntity -> new SimpleGrantedAuthority(permissionEntity.getRole().name()))
                 .toList();

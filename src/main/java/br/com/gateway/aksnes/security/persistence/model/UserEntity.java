@@ -9,7 +9,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
-import jakarta.persistence.OneToMany;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -46,7 +45,7 @@ public class UserEntity {
     @Column(columnDefinition = "CHAR(60) NOT NULL")
     private String password;
 
-    @Column(columnDefinition = "VARCHAR(12) NOT NULL")
+    @Column(columnDefinition = "CHAR(11) NOT NULL UNIQUE")
     private String cpf;
 
     @Column(nullable = false)
@@ -61,7 +60,7 @@ public class UserEntity {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
-    private Set<RoleEntity> roles;
+    private Set<RoleEntity> userRoles;
 
     @PrePersist
     private void prePersist() {

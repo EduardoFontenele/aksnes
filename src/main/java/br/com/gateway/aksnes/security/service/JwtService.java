@@ -1,6 +1,7 @@
 package br.com.gateway.aksnes.security.service;
 
 import br.com.gateway.aksnes.exception.ApiSecurityException;
+import br.com.gateway.aksnes.security.persistence.model.UserEntity;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwt;
@@ -41,12 +42,15 @@ public class JwtService {
         this.secretKey = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
     }
 
-    public String generateToken(String username) {
-        if (!hasLength(username)) throw new IllegalArgumentException("Username cannot be null or empty");
+    public String generateToken(UserEntity user) {
+        if (!hasLength(user.getEmail())) throw new IllegalArgumentException("Username cannot be null or empty");
+        var roles = user.getUserRoles().stream().map(role -> role.getRole().name()).toList();
 
         try {
             return Jwts.builder()
-                    .subject(username)
+                    .subject(user.getEmail())
+                    .claim("userId", user.getUserId())
+                    .claim("roles", roles)
                     .issuer(issuer)
                     .issuedAt(Date.from(now(clock)))
                     .expiration(Date.from(now(clock).plus(expirationMinutes, ChronoUnit.MINUTES)))
