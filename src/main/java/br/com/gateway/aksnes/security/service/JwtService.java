@@ -1,12 +1,17 @@
 package br.com.gateway.aksnes.security.service;
 
+import br.com.gateway.aksnes.exception.ApiSecurityException;
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwt;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.security.Keys;
+import io.jsonwebtoken.security.SignatureException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import javax.crypto.SecretKey;
@@ -53,14 +58,19 @@ public class JwtService {
         }
     }
 
-    public Jwt<?, Claims> parseJwt(CharSequence charSequence) {
+    public Jwt<?, Claims> parseJwt(CharSequence charSequence) throws ApiSecurityException {
         try {
             return Jwts.parser().verifyWith(secretKey)
                     .build()
                     .parseSignedClaims(charSequence);
+        } catch (ExpiredJwtException ex) {
+            throw new ApiSecurityException(HttpStatus.UNAUTHORIZED, "Token expired");
+        } catch (MalformedJwtException ex) {
+            throw new ApiSecurityException(HttpStatus.BAD_REQUEST, "Malformed JWT token");
+        } catch (SignatureException ex) {
+            throw new ApiSecurityException(HttpStatus.UNAUTHORIZED, "Invalid token signature");
         } catch (JwtException ex) {
-            log.error("Error extracting claims from JWT token: {}", ex.getMessage());
-            throw new RuntimeException("Failed to extract claims from JWT token", ex);
+            throw new ApiSecurityException(HttpStatus.UNAUTHORIZED, "Error parsing JWT token");
         }
     }
 }

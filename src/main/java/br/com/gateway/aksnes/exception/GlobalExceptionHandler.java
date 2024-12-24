@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-
-    @ExceptionHandler(ApiSecurityException.class)
-    public ResponseEntity<String> handle(ApiSecurityException exception) {
-        return new ResponseEntity<>( "ASFDCSJNDSC", HttpStatus.UNAUTHORIZED);
+    @ExceptionHandler(KafkaException.class)
+    public ResponseEntity<String> handle(KafkaException ex) {
+        return new ResponseEntity<>("Deu merda no Kafka", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }

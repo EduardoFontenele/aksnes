@@ -1,18 +1,18 @@
-package br.com.gateway.aksnes.security.persistence;
+package br.com.gateway.aksnes.security.persistence.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.Set;
 
 @Getter
 @Setter
@@ -20,14 +20,13 @@ import java.util.Set;
 @NoArgsConstructor
 @Builder
 @Entity
-public class UserEntity {
+@Table(name = "roles")
+public class RoleEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    private String username;
-    private String password;
+    private int id;
 
     @Enumerated(EnumType.STRING)
-    private UserRole userRole;
+    @Column(nullable = false, unique = true)
+    private Roles role;
 }

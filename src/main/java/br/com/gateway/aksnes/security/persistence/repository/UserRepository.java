@@ -1,5 +1,6 @@
-package br.com.gateway.aksnes.security.persistence;
+package br.com.gateway.aksnes.security.persistence.repository;
 
+import br.com.gateway.aksnes.security.persistence.model.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

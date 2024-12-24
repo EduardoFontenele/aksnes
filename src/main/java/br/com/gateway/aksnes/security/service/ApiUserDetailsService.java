@@ -1,7 +1,7 @@
 package br.com.gateway.aksnes.security.service;
 
 import br.com.gateway.aksnes.security.dto.UserSecurityDto;
-import br.com.gateway.aksnes.security.persistence.UserRepository;
+import br.com.gateway.aksnes.security.persistence.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetails;

@@ -1,6 +1,6 @@
 package br.com.gateway.aksnes.security.dto;
 
-import br.com.gateway.aksnes.security.persistence.UserEntity;
+import br.com.gateway.aksnes.security.persistence.model.UserEntity;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -16,7 +16,10 @@ public final class UserSecurityDto implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority(userEntity.getUserRole().name()));
+        return userEntity.getRoles()
+                .stream()
+                .map(permissionEntity -> new SimpleGrantedAuthority(permissionEntity.getRole().name()))
+                .toList();
     }
 
     @Override

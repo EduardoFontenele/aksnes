@@ -2,15 +2,14 @@ package br.com.gateway.aksnes.security.service;
 
 import br.com.gateway.aksnes.security.dto.UserRequestDto;
 import br.com.gateway.aksnes.security.dto.UserResponseDto;
-import br.com.gateway.aksnes.security.persistence.UserEntity;
-import br.com.gateway.aksnes.security.persistence.UserRepository;
-import br.com.gateway.aksnes.security.persistence.UserRole;
+import br.com.gateway.aksnes.security.persistence.model.UserEntity;
+import br.com.gateway.aksnes.security.persistence.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
+import java.util.HashSet;
 
 @Service
 @RequiredArgsConstructor
@@ -27,7 +26,8 @@ public class AuthenticationService {
         UserEntity userEntity = UserEntity.builder()
                 .username(user.username())
                 .password(passwordEncoder.encode(user.password()))
-                .userRole(UserRole.ROLE_ADMIN)
+                .email(passwordEncoder.encode(user.password()))
+                .roles(new HashSet<>())
                 .build();
         userRepository.save(userEntity);
 
